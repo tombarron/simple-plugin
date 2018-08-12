@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+      - name: debug user variables
+        debug:
+            var: other.option
+
+      - name: check bool flag
+        debug:
+            msg: "User flag is set"
+        when: other.flag
